@@ -1,0 +1,51 @@
+# nile.toml file generated for uichanges on 2023-11-06T17:37:35+05:30
+
+app = "uichanges"
+id = "6a63a5828c86b6179394a649148e9df54c4b7469ebdfde60e8179c6a3d096fff943c3152648888b11ab1c40d1e7c6b58"
+
+[build]
+  builtin = "node"
+
+kill_signal = "SIGINT"
+kill_timeout = 5
+
+[env]
+
+[experimental]
+  allowed_public_ports = []
+  auto_rollback = true
+
+[[services]]
+  external_port = 80
+  http_checks = []
+  internal_port = 4000
+  protocol = "tcp"
+  routing_policy = "Latency"
+  script_checks = []
+
+  [services.concurrency]
+    hard_limit = 25
+    soft_limit = 20
+    type = "connections"
+
+  [services.limits]
+    cpu = "1"
+    memory = "256"
+
+  [[services.ports]]
+    handlers = ["http"]
+    port = 80
+
+  [[services.ports]]
+    handlers = ["tls", "http"]
+    port = 443
+
+  [services.requests]
+    cpu = "0.5"
+    memory = "128"
+
+  [[services.tcp_checks]]
+    grace_period = "1s"
+    interval = "15s"
+    restart_limit = 6
+    timeout = "2s"
