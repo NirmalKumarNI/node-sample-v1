@@ -1,10 +1,10 @@
-# nile.toml file generated for uichanges on 2023-11-06T17:37:35+05:31
+# nile.toml file generated for marketplacexase on 2023-11-22T11:16:15+05:30
 
-app = "uichanges"
-id = "6a63a5828c86b6179394a649148e9df54c4b7469ebdfde60e8179c6a3d096fff943c3152648888b11ab1c40d1e7c6b58"
+app = "marketplacexase"
+id = "b77196984667b04e41ab7f5602fc917bbd37bbdad46d71f77f1d9802a95119a9077d538f65aad3f85cb09be84bb9ea4a"
 
 [build]
-  builtin = "static react"
+  builtin = "node"
 
 kill_signal = "SIGINT"
 kill_timeout = 5
