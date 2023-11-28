@@ -1,7 +1,7 @@
-# nile.toml file generated for actioncheckup on 2023-11-27T15:30:48+05:30
+# nile.toml file generated for checkoutind on 2023-11-28T21:14:24+05:30
 
-app = "actioncheckup"
-id = "fd65918232465c1cfee00f735a247cb37221a9d108724ac79b0fac2cd74f9d5a22ede726c723165e47d786e1b9ca3753"
+app = "checkoutind"
+id = "5c21330edcef24a081f076cc63f1a47a02ab51daf1ea5a88699873133b5817cc9019ae3ad1f7a251eeea451f149a12ad"
 
 [build]
   builtin = "node"
